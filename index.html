@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html  lang="zh-cn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scale=no,minimal-ui" />
+    <meta name="format-detection" content="telephone=no"/>
+    <!--上边的意思是格式侦测，当出现一串数字时不会被侦测为电话号码本项目不要电话号码侦测功能-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>手机阅读器</title>
+</head>
+<body>
+    <div id="root" class="container">
+        <div class="m-article-action">
+            <div class="article-action-mid jaction_mid"></div>
+        </div>
+        <div id="top_nav" class="top-nav jtop_nav" style="display: none;">
+            <div class="icon-back jbaidu"></div>
+            <div class="nav-title">返回书架</div>
+        </div>
+        <div id="fiction_chapter_title"></div>
+        <div id="fiction_container" class="m-read-content">
+            <h4>能得七皇子的青烟</h4>
+            <p>
+                说道Johnny Lee可能很多读者都不知道这个人是谁，可相信你一定听说过那个当年那个
+            破解Wii遥控手柄的家伙，2011年他从微软跳槽到了谷歌并参与研究了Project Tango项
+            目，现在他和他的同事们正在尝试解决虚拟现实最大的问题——为虚拟现实和增强现实
+            寻求移动位置跟踪技术的解决方案。
+            </p>
+            <p>
+                说道Johnny Lee可能很多读者都不知道这个人是谁，可相信你一定听说过那个当年那个
+                破解Wii遥控手柄的家伙，2011年他从微软跳槽到了谷歌并参与研究了Project Tango项
+                目，现在他和他的同事们正在尝试解决虚拟现实最大的问题——为虚拟现实和增强现实
+                寻求移动位置跟踪技术的解决方案。
+            </p>
+            <p>
+                说道Johnny Lee可能很多读者都不知道这个人是谁，可相信你一定听说过那个当年那个
+                破解Wii遥控手柄的家伙，2011年他从微软跳槽到了谷歌并参与研究了Project Tango项
+                目，现在他和他的同事们正在尝试解决虚拟现实最大的问题——为虚拟现实和增强现实
+                寻求移动位置跟踪技术的解决方案。
+            </p>
+            <p>
+                说道Johnny Lee可能很多读者都不知道这个人是谁，可相信你一定听说过那个当年那个
+                破解Wii遥控手柄的家伙，2011年他从微软跳槽到了谷歌并参与研究了Project Tango项
+                目，现在他和他的同事们正在尝试解决虚拟现实最大的问题——为虚拟现实和增强现实
+                寻求移动位置跟踪技术的解决方案。
+            </p>
+            <p>
+                说道Johnny Lee可能很多读者都不知道这个人是谁，可相信你一定听说过那个当年那个
+                破解Wii遥控手柄的家伙，2011年他从微软跳槽到了谷歌并参与研究了Project Tango项
+                目，现在他和他的同事们正在尝试解决虚拟现实最大的问题——为虚拟现实和增强现实
+                寻求移动位置跟踪技术的解决方案。
+            </p>
+            <p>
+                说道Johnny Lee可能很多读者都不知道这个人是谁，可相信你一定听说过那个当年那个
+                破解Wii遥控手柄的家伙，2011年他从微软跳槽到了谷歌并参与研究了Project Tango项
+                目，现在他和他的同事们正在尝试解决虚拟现实最大的问题——为虚拟现实和增强现实
+                寻求移动位置跟踪技术的解决方案。
+            </p>
+        </div>
+        <div class="m-button-bar">
+            <ul class="u-tab">
+                <!--此处可以用button但是用两个button比较麻烦-->
+                <li id="prev_button">上一章</li>
+                <li id="next_button">下一章</li>
+            </ul>
+        </div>
+        <div class="nav-pannel-bk jpannel_nav" style="display:none;"></div>
+        <div class="nav-pannel jpannel_nav" id="font-container" style="display: none;">
+            <div class="child-mod">
+                <span>字号</span>
+                <button id="large-font" class="font-size-button">大</button>
+                <button id="small-font" class="font-size-button">小</button>
+            </div>
+            <div class="child-mod">
+                <span>背景</span>
+                <div class="bk-container bk-other jbk">
+                    <div class="bk-container-current jbk jbk_container_c"></div>
+                </div>
+                <div class="bkc-space"></div>
+                <div class="bk-container bk-white jbk_white jbk">
+                    <div class="bk-container-current jbk_white jbk jbk_container_c" style="display: none"></div>
+                </div>
+                <div class="bkc-space"></div>
+                <div class="bk-container bk-blue jbk_blue jbk">
+                    <div class="bk-container-current jbk jbk_container_c jbk_blue" style="display:none"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav-bk jbottom_nav" style="display:none;"></div>
+        <div class="bottom-nav jbottom_nav" style="display: none;">
+            <div class="b-child-mod">
+                <div class="dir-container">
+                    <div class="bottom-container">
+                        <div class="bottom-icon icon-dir jbaidu"></div>
+                       <span>目录</span>
+                    </div>
+                </div>
+            </div>
+            <div class="b-child-mod ">
+                <div class="bottom-container ">
+                    <div class="bottom-icon icon-font-white jfont_button "></div>
+                    <span>字体</span>
+                </div>
+            </div>
+
+            <div class="b-child-mod b-child-mod-right jday_night_switch">
+                <div class="bottom-container day jday">
+                    <div class="bottom-icon icon-day "></div>
+                    <span>白天</span>
+                </div>
+                <div class="bottom-container night  jnight" style="display:none;">
+                    <div class="bottom-icon icon-night"></div>
+                    <span>夜间</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="lib/zepto.min.js"></script>
+    <script>
+        //文件是为了更快页面架构与表现 然后再加载行为控制从而达到加速页面加载速度
+        window.jQuery = $;
+        //为后边的插件提供基础库因为zepto和jquery API基本一致所以zepto可以做为jquery插件的基础库
+    </script>
+    <script src="js/jquery.base64.js"></script>
+    <script src="js/jquery.jsonp.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
